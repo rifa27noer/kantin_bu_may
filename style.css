@@ -1,0 +1,542 @@
+/* ==========================================
+   CSS WEBSITE KANTIN BU MAY
+   Tema: Hijau Modern
+========================================== */
+
+
+/* 1. RESET DAN DASAR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f8f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* 2. HEADER */
+
+header {
+    background: linear-gradient(135deg, #1b5e20, #388e3c);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* 3. NAVIGASI */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #1b5e20;
+}
+
+
+/* 4. KONTEN UTAMA */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #1b5e20;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+
+/* 5. BERANDA */
+
+#beranda {
+    text-align: center;
+    padding: 65px 25px;
+    background: linear-gradient(
+        rgba(27, 94, 32, 0.85),
+        rgba(56, 142, 60, 0.85)
+    );
+    color: white;
+}
+
+#beranda h2 {
+    color: white;
+    font-size: 32px;
+}
+
+#beranda p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+}
+
+
+/* 6. TOMBOL */
+
+.tombol {
+    display: inline-block;
+    background: #2e7d32;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background: #1b5e20;
+    transform: translateY(-3px);
+}
+
+#beranda .tombol {
+    background: white;
+    color: #1b5e20;
+}
+
+#beranda .tombol:hover {
+    background: #e8f5e9;
+}
+
+
+/* ==========================================
+   7. TENTANG KANTIN BU MAY
+   GAMBAR DIPERBESAR
+========================================== */
+
+.gambar-tentang {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto 25px;
+    border-radius: 15px;
+    background: #f4f8f4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 8. DAFTAR MENU */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.kartu-menu {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.kartu-menu:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.kartu-menu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.kartu-menu h3 {
+    color: #1b5e20;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.kartu-menu p {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.kartu-menu .tombol {
+    width: 100%;
+}
+
+
+/* 9. JAM OPERASIONAL */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #2e7d32;
+    color: white;
+    padding: 14px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 13px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background: #e8f5e9;
+}
+
+
+/* 10. GALERI */
+
+.galeri-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.galeri-container img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.galeri-container img:hover {
+    transform: scale(1.02);
+}
+
+#galeri h3 {
+    color: #1b5e20;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* 11. VIDEO */
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+
+/* 12. LOKASI GOOGLE MAPS */
+
+#lokasi iframe {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+
+/* 13. KONTAK */
+
+#kontak {
+    text-align: center;
+}
+
+#kontak p {
+    margin-bottom: 15px;
+}
+
+
+/* 14. FORM PEMESANAN */
+
+#pesan form {
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 25px;
+    background: #f9fff9;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+#pesan label {
+    display: block;
+    font-weight: bold;
+    color: #245c29;
+    margin: 15px 0 7px;
+}
+
+#pesan input,
+#pesan select,
+#pesan textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    font-family: inherit;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#pesan input:focus,
+#pesan select:focus,
+#pesan textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+}
+
+#pesan textarea {
+    resize: vertical;
+}
+
+
+/* 15. TOTAL HARGA */
+
+.total-pesanan {
+    background: #e8f5e9;
+    border: 2px solid #2e7d32;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.total-pesanan p {
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.total-pesanan h3 {
+    color: #1b5e20;
+    font-size: 27px;
+    margin: 0;
+}
+
+
+/* 16. TOMBOL PESAN */
+
+#pesan button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#pesan button[type="submit"]:hover {
+    background: #1b5e20;
+}
+
+
+/* 17. INFORMASI TAMBAHAN */
+
+aside {
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+aside h2 {
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+
+/* 18. FOOTER */
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+#tombol-atas {
+    background: white;
+    color: #1b5e20;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#tombol-atas:hover {
+    background: #c8e6c9;
+}
+
+
+/* 19. TAMPILAN TABLET */
+
+@media screen and (max-width: 900px) {
+
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .gambar-tentang {
+        height: 500px;
+    }
+
+}
+
+
+/* ==========================================
+   20. TAMPILAN HP
+========================================== */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    #beranda {
+        padding: 45px 15px;
+    }
+
+    #beranda h2 {
+        font-size: 25px;
+    }
+
+    /* FOTO TENTANG DI HP */
+    .gambar-tentang {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .kartu-menu img {
+        height: 220px;
+    }
+
+    .galeri-container {
+        grid-template-columns: 1fr;
+    }
+
+    .galeri-container img {
+        height: 230px;
+    }
+
+    #pesan form {
+        padding: 18px;
+    }
+
+    .total-pesanan h3 {
+        font-size: 23px;
+    }
+
+    table th,
+    table td {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    .tombol {
+        padding: 12px 15px;
+    }
+
+}
+
+
+/* ==========================================
+   SELESAI - CSS KANTIN BU MAY
+========================================== */
